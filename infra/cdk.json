@@ -1,0 +1,14 @@
+{
+  "app": "npx ts-node --prefer-ts-exts bin/app.ts",
+  "//": "Fill in the required values below before deploying. See the project README for details.",
+  "context": {
+    "sharedUserPoolId": "",
+    "sharedCognitoDomain": "",
+    "allowedEmailDomain": "",
+    "initialAdminEmail": "",
+    "identityProviderName": "GoogleWorkspace",
+    "appName": "RoPA Register",
+    "slackWebhookSecretName": "",
+    "slackBotTokenSecretName": ""
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "cognitoDomain": "https://YOUR_COGNITO_DOMAIN.auth.YOUR_REGION.amazoncognito.com",
+  "clientId": "YOUR_COGNITO_APP_CLIENT_ID",
+  "region": "eu-west-1",
+  "apiBase": "",
+  "callbackUrl": "http://localhost:5173/auth/callback",
+  "logoutUrl": "http://localhost:5173/",
+  "identityProvider": "GoogleWorkspace",
+  "appName": "RoPA Register"
+}

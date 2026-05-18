@@ -1,0 +1,15 @@
+node_modules
+dist
+infra/dist
+infra/cdk.out
+infra/cdk-outputs.json
+*.tsbuildinfo
+package-lock.json
+vite.config.js
+vite.config.d.ts
+public/config.json
+.env
+.env.local
+*.local
+.DS_Store
+*.log
