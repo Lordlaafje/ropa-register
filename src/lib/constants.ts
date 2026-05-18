@@ -57,17 +57,17 @@ export const STATUS_LABELS: Record<ActivityStatus, string> = {
 }
 
 export const DATA_SUBJECT_CATEGORIES = [
-  'Children (students)',
-  'Parents / guardians',
-  'Teachers',
-  'School staff',
-  'B2B contacts',
+  'Customers',
+  'Prospects / leads',
   'Website visitors',
   'Employees',
   'Job applicants',
   'Contractors / freelancers',
-  'Customers',
-  'Prospects / leads',
+  'Suppliers / vendors',
+  'Business contacts',
+  'Members / subscribers',
+  'Children (under 16)',
+  'Other',
 ] as const
 
 export const PERSONAL_DATA_CATEGORIES = [
@@ -82,21 +82,21 @@ export const PERSONAL_DATA_CATEGORIES = [
   'Device identifiers',
   'IP address',
   'Cookies / tracking data',
+  'Location data',
   'Payment details',
   'Bank account',
   'Photos / video',
   'Audio recordings',
   'Login credentials',
-  'Learning progress',
-  'Test / exam results',
-  'School / class data',
   'Free-text content',
   'Employment data',
   'Salary / payroll data',
   'ID document data',
-  'BSN',
+  'National ID number',
   'Health data',
   'Ethnicity',
+  'Religious beliefs',
+  'Political opinions',
   'Biometric data',
 ] as const
 

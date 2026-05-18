@@ -120,10 +120,10 @@ export default function Wizard() {
     }
   }
 
-  // Auto-fill children's data toggle if "Students" selected
+  // Auto-fill children's data toggle if the children data-subject category is selected
   useEffect(() => {
     const subs = state.draft.dataSubjects || []
-    if (subs.includes('Children (students)') && !state.draft.childrensData) {
+    if (subs.includes('Children (under 16)') && !state.draft.childrensData) {
       setState((s) => ({ ...s, draft: { ...s.draft, childrensData: true } }))
     }
   }, [state.draft.dataSubjects, state.draft.childrensData])
@@ -396,7 +396,7 @@ function Step2({
   update: <K extends keyof ActivityInput>(k: K, v: ActivityInput[K]) => void
 }) {
   const d = state.draft
-  const studentsSelected = (d.dataSubjects || []).includes('Children (students)')
+  const childrenSelected = (d.dataSubjects || []).includes('Children (under 16)')
   return (
     <div className="space-y-5">
       <h2 className="text-lg font-semibold text-slate-900">Whose data, and what data?</h2>
@@ -407,9 +407,9 @@ function Step2({
           onChange={(v) => update('dataSubjects', v)}
         />
       </FormField>
-      {studentsSelected && (
+      {childrenSelected && (
         <div className="bg-amber-50 border border-amber-200 text-amber-800 text-sm rounded-md p-3">
-          Students selected — children's data flag has been set automatically (Art. 8 GDPR).
+          Children selected — children's data flag has been set automatically (Art. 8 GDPR).
         </div>
       )}
       <FormField label="What kinds of data are you processing?" required>
