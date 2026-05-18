@@ -334,7 +334,7 @@ function Step1({
           value={d.activityName || ''}
           onChange={(e) => update('activityName', e.target.value)}
           className="w-full px-3 py-2 border border-slate-300 rounded-md text-sm focus:outline-none focus:border-emerald-600 focus:ring-2 focus:ring-emerald-100"
-          placeholder="e.g. Squla — student progress tracking"
+          placeholder="e.g. Customer support ticket handling"
         />
       </FormField>
       <FormField label="Describe in one sentence what this is" required>

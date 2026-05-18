@@ -226,7 +226,7 @@ export default function QuickForm({ mode, initial, initialDraft }: QuickFormProp
             value={draft.activityName || ''}
             onChange={(e) => update('activityName', e.target.value)}
             className={inputCls(!!errors.activityName)}
-            placeholder="e.g. Squla — student progress tracking"
+            placeholder="e.g. Customer support ticket handling"
           />
         </FormField>
         <FormField label="Short purpose" required error={errors.purposeShort} hint="One line — what this processing is for.">
